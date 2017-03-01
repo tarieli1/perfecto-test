@@ -9,13 +9,12 @@ const router = express.Router();
 
 
 router
-	
-	.get('/:id', (req, res) => {
+	.get('/:id', validate(validation.address.get), (req, res) => {
 		const id = req.params.id;
-		controller.find(id)
+		controller.get(id)
 			.then(data => res.json(data))
 			.catch((err) => {
-				logger.error(`Error occurred while getting address with address ${id}`, err);
+				logger.error(`Error occurred while getting address with id ${id}`, err);
 				return res.status(500).send(err);
 			});
 	})
