@@ -4,14 +4,12 @@ module.exports = {
 	address: {
 		create: {
 			body: {
-				altitude: Joi.number().required(),
-				longitude: Joi.number().required(),
 				address: Joi.string().required(),
 			},
 		},
 		get: {
 			params: {
-				id: Joi.number().required(),
+				id: Joi.string().required(),
 			},
 		},
 	},
