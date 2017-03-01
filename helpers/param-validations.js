@@ -9,5 +9,10 @@ module.exports = {
 				address: Joi.string().required(),
 			},
 		},
+		get: {
+			params: {
+				id: Joi.number().required(),
+			},
+		},
 	},
 };
