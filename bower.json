@@ -1,0 +1,23 @@
+{
+  "name": "test-again",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "TamirArieli <tarieli1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
