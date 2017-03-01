@@ -1,7 +1,7 @@
 const express = require('express');
 const validate = require('express-validation');
 
-const logger = require('../lib');
+const { logger } = require('../lib');
 const { validation } = require('../helpers');
 const controller = require('./controller');
 
