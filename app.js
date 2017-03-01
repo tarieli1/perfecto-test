@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
-const address = require('./address');
-const addressRoute = require('./address/route');
+const addressRoute = require('./address');
 const { logger, config } = require('./lib');
 
 const app = express();
